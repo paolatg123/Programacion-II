@@ -1,4 +1,5 @@
 package pack1;
+
 public class Circulo2D {
     private double x;
     private double y;
@@ -36,7 +37,7 @@ public class Circulo2D {
 
     public boolean contiene(double x, double y) {
         double distancia = Math.sqrt(Math.pow(this.x - x, 2) + Math.pow(this.y - y, 2));
-        return distancia <= radio;
+        return distancia <= radio ;
     }
 
     public boolean contieneCirculo(Circulo2D circulo) {

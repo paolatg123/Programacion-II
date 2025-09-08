@@ -29,7 +29,7 @@ class Circulo2D:
         distancia = math.sqrt((self.x - circulo.x) ** 2 + (self.y - circulo.y) ** 2)
         return distancia + circulo.radio <= self.radio
 
-    def sobrepone(self, circulo):
+    def sobrepone(self, circulo) :
         distancia = math.sqrt((self.x - circulo.x) ** 2 + (self.y - circulo.y) ** 2)
         return distancia < self.radio + circulo.radio
 
@@ -44,3 +44,4 @@ class Circulo2D:
 if __name__ == "__main__":
     c1 = Circulo2D(2, 0, 1)
     c1.mostrar()
+    
