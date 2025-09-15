@@ -124,7 +124,5 @@ def vectores():
     componente = v4.componente(v1)
     print(f"h) Componente de a en b: Compb a = a·b/|b|: {int(componente)}")
     print("---------------------------------------------------------")
-
-
 if __name__ == "__main__":
     vectores()

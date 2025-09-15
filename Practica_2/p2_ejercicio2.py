@@ -19,6 +19,7 @@ class vector_tridimensional:
         return math.sqrt(int(self.x**2 + self.y**2 + self.z**2))
     
     def normal(self):
+        
         m = self.long()
         if m == 0:
             return vector_tridimensional(0, 0, 0)
@@ -40,7 +41,7 @@ def vector():
     b = vector_tridimensional(4, 5, 6)
     c = vector_tridimensional(0, 0, 0)  
     
-    print("--------------------------------------------------------")
+    print("-------------------------------------------------------------")
     print(f"Vector a = {a}")
     print(f"Vector b = {b}")
     print(f"Vector c = {c}")
@@ -54,6 +55,6 @@ def vector():
     print("f) PRODUCTO VECTORIAL: a×b =", a.producto_vectorial(b))
     print(f"a·b = {a.producto_escalar(b)} Son ortogonales? {a.producto_escalar(b) == 0}")
     print(f"a·c = {a.producto_escalar(c)} Son ortogonales? {a.producto_escalar(c) == 0}")
-
+    
 if __name__ == "__main__":
     vector()
